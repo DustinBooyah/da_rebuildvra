@@ -1,0 +1,479 @@
+/*
+ theme name:   muse to wordpress child
+ theme uri:    https://readytoworkpa.com/muse-to-wordpress-child/
+ description:  muse to wordpress child theme
+ author:       Dustin Aguilar
+ author uri:   https://dustinaguilar.com
+ template:     muse-to-wordpress
+ version:      1.0.0
+ license:      gnu general public license v2 or later
+ license uri:  http://www.gnu.org/licenses/gpl-2.0.html
+ tags:         footer, header, menu, accessibility-ready, minimal
+ text domain:  muse-to-wordpress-child
+*/
+
+@font-face {
+    font-family: 'proxima_nova_blblack';
+    src: url('fonts/proximanova-black.eot');
+    src: url('fonts/proximanova-black.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-black.woff2') format('woff2'),
+         url('fonts/proximanova-black.woff') format('woff'),
+         url('fonts/proximanova-black.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold.eot');
+    src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold.woff2') format('woff2'),
+         url('../fonts/proximanova-bold.woff') format('woff'),
+         url('../fonts/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proximanova-reg.eot');
+    src: url('../fonts/proximanova-reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-reg.woff2') format('woff2'),
+         url('../fonts/proximanova-reg.woff') format('woff'),
+         url('../fonts/proximanova-reg.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url('../fonts/proximanova-sbold.eot');
+    src: url('../fonts/proximanova-sbold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-sbold.woff2') format('woff2'),
+         url('../fonts/proximanova-sbold.woff') format('woff'),
+         url('../fonts/proximanova-sbold.svg#proxima_nova_ltsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_thextrabold';
+    src: url('../fonts/proximanova-xbold.eot');
+    src: url('../fonts/proximanova-xbold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-xbold.woff2') format('woff2'),
+         url('../fonts/proximanova-xbold.woff') format('woff'),
+         url('../fonts/proximanova-xbold.svg#proxima_nova_thextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 1.15;
+	font-family: sans-serif;
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body, button, input, select, textarea {
+	font-size: 16px;
+	font-size: 1em;
+	line-height: 1.5;
+	background: #fff;
+	margin:0;
+}
+body, button, input, select, textarea {
+	color: #333;
+	font-family: "proxima_nova_rgregular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	line-height: 1.66;
+}
+*, ::before, ::after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+.site-header {
+	padding: 0px;
+	background-color: #f9f9f9;
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,.1);
+}
+
+main {
+	max-width: 80em;
+	margin: 0 auto;
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	line-height: 1.4;
+	margin: 0 0 0.75em;
+	/* padding: 1.5em 0 0; */
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+
+	line-height: 1.1;
+
+}
+h1 {
+	/* font-size: 24px; */
+	font-size: 3.25em;
+	font-weight: 900;
+	font-family: "proxima_nova_blblack";
+	text-transform: uppercase;
+	letter-spacing: -0.04em;
+}
+h2,
+.home.blog .entry-title {
+    color: #666;
+/*  font-size: 20px;
+*/  font-size: 2em;
+    font-weight: 900;
+}
+
+h3 {
+    color: #333;
+/*  font-size: 18px;
+*/  font-size: 1.75em;
+    font-weight: 300;
+}
+
+h4 {
+    color: #333;
+/*  font-size: 16px;
+*/  font-size: 1.5em;
+    font-weight: 800;
+}
+
+h5 {
+    color: #767676;
+/*  font-size: 13px;
+*/  font-size: 1.25em;
+    font-weight: 800;
+
+}
+
+h6 {
+    color: #333;
+/*  font-size: 15px;
+*/  font-size: 1em;
+    font-weight: 800;
+}
+
+p {
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+article, aside, footer, header, nav, section {
+	display: block;
+}
+.nav-wrap {
+    min-height: 54px;
+    padding: 1.1em;
+    /* margin-bottom: 2em; */
+    max-width: 1280px;
+    margin: auto;
+}
+
+nav {
+    font-size: 0.9em;
+    text-align: center;
+    font-family: "proxima_nova_ltsemibold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+
+}
+nav ul {
+    display: inline-block;
+}
+nav li {
+    background: #2E1A46;
+    /* background: linear-gradient(#006fb1, #005f98); */
+    display: inline-block;
+    padding: 5px 12px;
+    cursor: pointer;
+    border: none;
+}
+nav li:hover {
+    color:#66CFC1;
+}
+nav li a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: #66CFC1;
+    text-decoration:none;
+}
+@media only screen and (min-width: 50em) {
+    nav {
+        text-align: right;
+        font-size: 1.1em;
+    }
+}
+/*--------------------------------------------------------------
+3.0 Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right {
+    float: right;
+}
+.text-right {
+    text-align:right;
+}
+.left {
+    float: left;
+}
+.text-left {
+    text-align:left;
+}
+.center, .center img {
+    margin: 0 auto;
+    text-align: center;
+}
+.text-center {
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    color: #7F7F7F;
+    width: 100%;
+}
+.footer {
+    background-color: #2E1A46;
+    padding: 1.5rem 4.5em;
+    /*font-size: 0.85em;*/
+/*  margin-bottom: 1em;
+*/}
+.footer h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "proxima_nova_ltsemibold", sans-serif;
+}
+.footer h6, .footer a {
+    color: #7F7F7F;
+    font-weight: bold;
+    letter-spacing:-0.01em;
+}
+.footer a:focus, .footer a:active, .footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer ul, .footer li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+footer .border {
+    border-left: solid 1px #555;
+    margin-left: 10px;
+    /*padding:5px;*/
+}
+.site-footer {
+    flex: none;
+    /* 2 */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.grid-cell {
+    flex: 1;
+}
+.grid--flexcells>.grid-cell {
+    display: flex;
+}
+.grid--top {
+    align-items: flex-start;
+}
+.grid--bottom {
+    align-items: flex-end;
+}
+.grid--center {
+    align-items: center;
+}
+.grid--justifycenter {
+    justify-content: center;
+}
+.grid-cell--top {
+    align-self: flex-start;
+}
+.grid-cell--bottom {
+    align-self: flex-end;
+}
+.grid-cell--center {
+    align-self: center;
+}
+.grid-cell--autosize {
+    flex: none;
+}
+.grid--fit>.grid-cell {
+    flex: 1;
+}
+.grid--full>.grid-cell {
+    flex: 0 0 100%;
+}
+.grid--1of2>.grid-cell {
+    flex: 0 0 50%;
+}
+.grid--1of3>.grid-cell {
+    flex: 0 0 33.3333%;
+}
+.grid--1of4>.grid-cell {
+    flex: 0 0 25%;
+}
+@media (--break-sm) {
+    .small-grid--fit>.grid-cell {
+        flex: 1;
+    }
+    .small-grid--full>.grid-cell {
+        flex: 0 0 100%;
+    }
+    .small-grid--1of2>.grid-cell {
+        flex: 0 0 50%;
+    }
+    .small-grid--1of3>.grid-cell {
+        flex: 0 0 33.3333%;
+    }
+    .small-grid--1of4>.grid-cell {
+        flex: 0 0 25%;
+    }
+}
+@media (--break-md) {
+    .med-grid--fit>.grid-cell {
+        flex: 1;
+    }
+    .med-grid--full>.grid-cell {
+        flex: 0 0 100%;
+    }
+    .med-grid--1of2>.grid-cell {
+        flex: 0 0 50%;
+    }
+    .med-grid--1of3>.grid-cell {
+        flex: 0 0 33.3333%;
+    }
+    .med-grid--1of4>.grid-cell {
+        flex: 0 0 25%;
+    }
+}
+@media (--break-lg) {
+    .large-grid--fit>.grid-cell {
+        flex: 1;
+    }
+    .large-grid--full>.grid-cell {
+        flex: 0 0 100%;
+    }
+    .large-grid--1of2>.grid-cell {
+        flex: 0 0 50%;
+    }
+    .large-grid--1of3>.grid-cell {
+        flex: 0 0 33.3333%;
+    }
+    .large-grid--1of4>.grid-cell {
+        flex: 0 0 25%;
+    }
+}
+.grid--gutters {
+    margin: -1em 0 1em -1em;
+}
+.grid--gutters>.grid-cell {
+    padding: 1em 0 0 1em;
+}
+.grid--gutterslg {
+    margin: -1.5em 0 1.5em -1.5em;
+}
+.grid--gutterslg>.grid-cell {
+    padding: 1.5em 0 0 1.5em;
+}
+.grid--guttersxl {
+    margin: -2em 0 2em -2em;
+}
+.grid--guttersxl>.grid-cell {
+    padding: 2em 0 0 2em;
+}
+@media (--break-sm) {
+    .small-grid--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .small-grid--gutters>.grid-cell {
+        padding: 1em 0 0 1em;
+    }
+    .small-grid--gutterslg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .small-grid--gutterslg>.grid-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .small-grid--guttersxl {
+        margin: -2em 0 2em -2em;
+    }
+    .small-grid--guttersxl>.grid-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+@media (--break-md) {
+    .med-grid--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .med-grid--gutters>.grid-cell {
+        padding: 1em 0 0 1em;
+    }
+    .med-grid--gutterslg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .med-grid--gutterslg>.grid-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .med-grid--guttersxl {
+        margin: -2em 0 2em -2em;
+    }
+    .med-grid--guttersxl>.grid-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+@media (--break-lg) {
+    .large-grid--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .large-grid--gutters>.grid-cell {
+        padding: 1em 0 0 1em;
+    }
+    .large-grid--gutterslg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .large-grid--gutterslg>.grid-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .large-grid--guttersxl {
+        margin: -2em 0 2em -2em;
+    }
+    .large-grid--guttersxl>.grid-cell {
+        padding: 2em 0 0 2em;
+    }
+}
