@@ -78,16 +78,6 @@ body, button, input, select, textarea {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
-.site-header {
-    padding: 0px;
-    background-color: #f9f9f9;
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .1);
-}
-main {
-    max-width: 80em;
-    margin: 0 auto;
-    display: block;
-}
 h1, h2, h3, h4, h5, h6 {
     clear: both;
     line-height: 1.4;
